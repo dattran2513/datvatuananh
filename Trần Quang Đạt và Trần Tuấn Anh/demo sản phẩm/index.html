@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sport store</title>
+    <link rel="icon" href="https://th.bing.com/th/id/OIP.Lpi0tEHN3y4PM__7abbAEQHaJd?w=167&h=214&c=7&r=0&o=5&dpr=2&pid=1.7" type="image/x-icon"/>
+    <link rel="stylesheet" href="./accsets/css/index.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="http://use.fontawesome.com/releases/v5.0.4/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+</head>
+<body>
+    <section id="header">
+        <a  class="logo-web" href="#">Đạt Anh Store</a>
+        <div>
+            <ul id="navbar">
+                <li><a class="trangchu active" href="#">Trang chủ</a></li>
+                <li><a class="cuahang" href="#">Thông tin</a></li>
+                <li><a class="dangnhap" href="#newletter">Đăng nhập</a></li>
+                <li><a class="tienich" href="#">Thông báo</a></li>
+                <li><a class="lienhe" href="#lienhe">Liên hệ</a></li>
+                <li><a href="https://www.facebook.com/profile.php?id=100034029676616">Trợ giúp</a></li>
+                <li id="lg-bag"><i class="fas fa-shopping-bag"></i></li>
+                <div class="boxcart">
+                    <div class="box-croll">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Sản Phẩm</th>
+                                    <th>Tên sản phẩm</th>
+                                    <th>Giá tiền</th>
+                                    <th>Chọn</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            <!--   <tr>
+                                    <td><img src="./accsets/img/anh1.jpg" alt=""></td>
+                                    <td>Vans</td>
+                                    <td>100.000</td>
+                                    <td>Xóa</td>
+                                </tr> -->
+                            </tbody>
+                        </table>
+
+                    </div>
+                    
+                    <div class="SumPrice">
+                        <p>Thành Tiền: <span>0</span> VND</p>
+                        <h6>Vui lòng đăng nhập để thanh toán và mua hàng.</h6>
+                    </div>
+                </div>
+                <i id="close" class="fas fa-times"></i>
+                <!--<a href="" id="close"><i class="fas fa-times"></i></a>-->
+            </ul>
+        </div>
+        <div id="mobile">
+           <a href="#"><i class='bx bx-cart-alt' ></i></a></li>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+    <!--
+    <marquee behavior="scroll" direction="left" style="color:#000;">© Minh Duc | Don't Report  Please | Mình có nhận dựng, lập trình website theo yêu cầu. Liên hệ với tôi tại mục liên hệ. Xin cảm ơn.</marquee>
+-->
+    <section id="hero">
+        <div id="MyClockDisplay" class="clock" onload="showTime()"></div>
+        <h4>Chào mừng bạn đến với Store</h4>
+        <h2>Đạt Anh Store</h2>
+        <h1>Hàng thể thao chính hãng</h1>
+        <p>Nếu có trải nghiệm chưa hài lòng, vui lòng liên hệ với chúng tôi tại đây để góp ý trải nghiệm</p>
+        <a href="https://www.facebook.com/profile.php?id=100034029676616"><button class="normal">Liên hệ admin</button></a>
+    </section>
+
+    <section id="feature" class="section-p1">
+        <div class="fe-box">
+            <img src="./accsets/img/anh6.jpg" alt="">
+            <h6>Miễn phí ship</h6>
+        </div>
+
+        <div class="fe-box">
+            <img src="./accsets/img/anh6.jpg" alt="">
+            <h6>Hỗ trợ 24/7</h6>
+        </div>
+
+        <div class="fe-box">
+            <img src="./accsets/img/anh6.jpg" alt="">
+            <h6>Promotions</h6>
+
+
+        </div><div class="fe-box">
+            <img src="./accsets/img/anh6.jpg" alt="">
+            <h6>Happy Sell</h6>
+        </div>
+
+        <div class="fe-box">
+            <img src="./accsets/img/anh6.jpg" alt="">
+            <h6>Save Money</h6>
+        </div>
+
+
+        <div class="fe-box">
+            <img src="./accsets/img/anh6.jpg" alt="">
+            <h6>Online Order</h6>
+        </div>
+    </section>
+
+    <section id="newletter" class="section-p1 section-m1"> 
+        <div class="newstext">
+            <h4>Đăng nhập để mua hàng</h4>
+            <p>Nếu chưa có tài khoản hãy đăng kí tài khoản<a href="dangki.html"> <span> ngay tại đây.</span></a></p>
+        </div>
+        <div class="form">
+            <input id="login" type="text" placeholder="Nhập email của bạn">
+            <button class="normal" onclick="checkLogin()">Đăng nhập</button>
+        </div>
+    </section>
+
+    <section id="product1" class="section-p1 menu1">
+        <h2>Top sản phẩm bán chạy nhất</h2>
+        <p> Dựa trên doanh số năm 2021</p>
+        <div class="pro-container">
+            <div class="pro">
+                <img src="./accsets/img/vans1.png" alt="">
+                <div class="des">
+                    <span>Vans off the wall</span>
+                    <h5>Vans old skool - Black White</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>1.300.000 vnd</h4>
+                </div>
+                <button class="btn-cart" href="#"><i class="bx bxs-cart-add cart"></i></button>
+            </div>
+
+            <div class="pro">
+                <img src="./accsets/img/vans2.png" alt="">
+                <div class="des">
+                    <span>Vans off the wall</span>
+                    <h5>Vans old skool - Etherea White</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>1.200.000 vnd</h4>
+                </div>
+                <button class="btn-cart" href="#"><i class="bx bxs-cart-add cart"></i></button>
+            </div>
+
+            <div class="pro">
+                <img src="./accsets/img/vans3.png" alt="">
+                <div class="des">
+                    <span>Vans off the wall</span>
+                    <h5>Vans old skool - Drum White</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>1.450.000 vnd</h4>
+                </div>
+                <button class="btn-cart" href="#"><i class="bx bxs-cart-add cart"></i></button>
+            </div>
+
+            <div class="pro">
+                <img src="./accsets/img/vans4.png" alt="">
+                <div class="des">
+                    <span>Vans off the wall</span>
+                    <h5>Vans old skool - Red White</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>1.000.000 vnd</h4>
+                </div>
+                <button class="btn-cart" href="#"><i class="bx bxs-cart-add cart"></i></button>
+            </div>
+
+            <div class="pro">
+                <img src="./accsets/img/vans5.png" alt="">
+                <div class="des">
+                    <span>Vans off the wall</span>
+                    <h5>Vans old skool - Navy White</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>1.300.000 vnd</h4>
+                </div>
+                <button class="btn-cart" href="#"><i class="bx bxs-cart-add cart"></i></button>
+            </div>
+
+            <div class="pro">
+                <img src="./accsets/img/vans6.png" alt="">
+                <div class="des">
+                    <span>Vans off the wall</span>
+                    <h5>Vans SK8 - Navy White</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>1,650,000 vnd</h4>
+                </div>
+                <button class="btn-cart" href="#"><i class="bx bxs-cart-add cart"></i></button>
+            </div>
+
+            <div class="pro">
+                <img src="./accsets/img/vans7.png" alt="">
+                <div class="des">
+                    <span>Vans off the wall</span>
+                    <h5>Vans SK8 - Checkerboard</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>1.600.000 vnd</h4>
+                </div>
+                <button class="btn-cart" href="#"><i class="bx bxs-cart-add cart"></i></button>
+            </div>
+
+            <div class="pro">
+                <img src="./accsets/img/vans8.png" alt="">
+                <div class="des">
+                    <span>Vans off the wall</span>
+                    <h5>Vans SK8 - Desert</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>1.900.000 vnd</h4>
+                </div>
+                <button class="btn-cart" href="#"><i class="bx bxs-cart-add cart"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <section id="banner" class="section-m1">
+        <h4>Repair Services</h4>
+        <h2>Up to <span>70% off</span> all T-Shirts & Accessories</h2>
+        <button class="normal">Xem mẫu</button>
+    </section>
+
+    <section id="product1" class="section-p1">
+        <h2>Mẫu mới 2022 (SS-22)</h2>
+        <p>Full size - Sẵn tại Store</p>
+        <div class="pro-container">
+            <div class="pro">
+                <img src="./accsets/img/vans8.png" alt="">
+                <div class="des">
+                    <span>Vans off the wall</span>
+                    <h5>Vans SK8 - Desert</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>1.900.000</h4>
+                </div>
+                <button class="btn-cart"><i class="bx bxs-cart-add cart"></i></button>
+            </div>
+
+            <div class="pro">
+                <img src="./accsets/img/vans7.png" alt="">
+                <div class="des">
+                    <span>Vans off the wall</span>
+                    <h5>Vans SK8 - Checkerboard</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>1.600.000</h4>
+                </div>
+                <button class="btn-cart"><i class="bx bxs-cart-add cart"></i></button>
+            </div>
+
+            <div class="pro">
+                <img src="./accsets/img/vans5.png" alt="">
+                <div class="des">
+                    <span>Vans off the wall</span>
+                    <h5>Vans old skool - Navy White</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>1.300.000</h4>
+                </div>
+                <button class="btn-cart"><i class="bx bxs-cart-add cart"></i></button>
+            </div>
+
+            <div class="pro">
+                <img src="./accsets/img/vans6.png" alt="">
+                <div class="des">
+                    <span>Vans off the wall</span>
+                    <h5>Vans SK8 - Navy White</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>1.650.000</h4>
+                </div>
+                <button class="btn-cart"><i class="bx bxs-cart-add cart"></i></button>
+            </div>
+
+            <div class="pro">
+                <img src="./accsets/img/vans4.png" alt="">
+                <div class="des">
+                    <span>Vans off the wall</span>
+                    <h5>Vans old skool - Red White</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>1.000.000</h4>
+                </div>
+                <button class="btn-cart"><i class="bx bxs-cart-add cart"></i></button>
+            </div>
+
+            <div class="pro">
+                <img src="./accsets/img/vans3.png" alt="">
+                <div class="des">
+                    <span>Vans off the wall</span>
+                    <h5>Vans old skool - Drum White</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>1.450.000</h4>
+                </div>
+                <button class="btn-cart"><i class="bx bxs-cart-add cart"></i></button>
+            </div>
+
+            <div class="pro">
+                <img src="./accsets/img/vans2.png" alt="">
+                <div class="des">
+                    <span>Vans off the wall</span>
+                    <h5>Vans old skool - Etherea White</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>1.200.000</h4>
+                </div>
+                <a href="#"><i class="bx bxs-cart-add cart"></i></a>
+            </div>
+
+            <div class="pro">
+                <img src="./accsets/img/vans1.png" alt="">
+                <div class="des">
+                    <span>Vans off the wall</span>
+                    <h5>Vans old skool - Black White</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>1.300.000</h4>
+                </div>
+                <button class="btn-cart"><i class="bx bxs-cart-add cart"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <section id="sm-banner" class="section-p1">
+        <div class="banner-box">
+            <h4>Deal ưu đãi cực lớn</h4>
+            <h2>Mua 1 đôi tặng 1 đôi</h2>
+            <span>Mua 1 tặng 1 tính tiền 2</span>
+            <button class="white">Xem ngay</button>
+        </div>
+        <div class="banner-box banner-box2">
+            <h4>Deal dịch vụ facebook</h4>
+            <h2>Mua 1 gói dịch vụ x2</h2>
+            <span>Mua 1 gói tặng x2 dịch vụ</span>
+            <button class="white">Xem ngay</button>
+        </div>
+    </section>
+
+    <section id="banner3" class="section-p1">
+        <div class="banner-box">
+            <h2>Vans old</h2>
+            <h3>Ưu đãi giảm đến 30%</h3>
+
+        </div>
+        <div class="banner-box banner-box2">
+            <h2>Slip on</h2>
+            <h3>Ưu đãi giảm đến 20%</h3>
+
+        </div>
+        <div class="banner-box banner-box3">
+            <h2>Vans SK8</h2>
+            <h3>Ưu đãi giảm đến 10%</h3>
+
+        </div>
+    </section>
+
+
+    <footer id="lienhe" class="section-p1">
+        <div class="col">
+           <!-- <img class="logo" src="./logo" alt=""> -->
+            <h4>Contact - Liên hệ</h4>
+            <p><strong>Name: </strong>Trần Quang Đạt</p>
+            <p><strong>Phone: </strong>0123.456.789</p>
+            <p><strong>Email: </strong>quangdat2002th@gmail.com</p>
+            <p><strong>Hours: </strong>08:00 - 18:30 hằng ngày từ thứ 2 đến thứ 7</p>
+            
+            <div class="follow">
+                <h4>Follow Us - Theo dõi tôi</h4>
+                <div class="icon">
+                    <a href="https://www.facebook.com/profile.php?id=100034029676616" class="fb"><i class='bx bxl-facebook-circle'></i></a>
+                    <a href="https://www.instagram.com/" class="ins"><i class='bx bxl-instagram' ></i></a>
+                    <a href="https://www.youtube.com/channel/UCa_J8ltwstPd0wdBKZkW-PA" class="ytb"><i class='bx bxl-youtube' ></i></a>
+                    <a href="https://www.youtube.com/channel/UCa_J8ltwstPd0wdBKZkW-PA" class="git"><i class='bx bxl-github' ></i></a>
+                    <a href="https://www.youtube.com/channel/UCa_J8ltwstPd0wdBKZkW-PA" class="tik"><i class='bx bxl-tiktok' ></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <h4>About</h4>
+            <a href="">About Us</a>
+            <a href="">Delivery Information</a>
+            <a href="">Privacy Policy</a>
+            <a href="">Contact Us</a>
+        
+        </div>
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="">Sign In</a>
+            <a href="">View Cart</a>
+            <a href="">My Wishlist</a>
+            <a href="">Track My Order</a>
+            <a href="">Help</a>
+        </div>
+        <div class="col install">
+            <h4 id="install">Install App</h4>
+            <p>From App Store or Google Play</p>
+            <div class="row">
+                <img src="./accsets/img/googleplay.jpg" alt="" style="width: 20%;">
+                <img class="ios" src="./accsets/img/appstore.png" alt="" style="width: 20%;">
+            </div>
+            <p>Secured Payment Gateways</p>
+            <img class="baybanking" src="./accsets/img/baybanking.jpg" alt="img error">
+        </div>
+    </footer>
+    <div class="copyright ">
+        <p>Bản quyền bởi<a href=""><span> ©DucDatStore</span></a><br> Bên mình có nhận dựng, lập trình website theo yêu cầu. Liên hệ với chúng tôi tại mục contact. Xin cảm ơn</p>
+    </div>
+    
+    <script src="./accsets/js/app.js"></script>
+
+</body>
+</html>
