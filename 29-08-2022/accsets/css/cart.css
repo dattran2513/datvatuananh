@@ -1,0 +1,59 @@
+*{
+    top: 0;
+}
+span{
+    color:#088179;
+    font-weight: 600;
+}
+body{
+    height: 100%;
+    background-color: antiquewhite;
+}
+.btn_cart{
+    background-color: #0881797e;
+    font-size: 15px;
+    padding: 10px 26px;
+    font-weight: 600;
+}
+.btn_cart:hover{
+    background-color: #fddde4;
+    cursor: pointer;
+}
+#cart{
+    height: 100%;
+    width: 100%;
+    padding: 0 15%;
+    background-color: antiquewhite;
+}
+table,th,td{
+    text-align: center;
+    border: 1px solid #088179;
+    border-collapse: collapse;
+}
+img{
+    width: 100%;
+}
+table{
+    background-color: #fff;
+    width: 100%;
+}
+th:nth-child(1){
+    width: 15%;
+}
+th:nth-child(2){
+    width: 40%;
+}
+.box-croll{
+    /*height: 500px;*/
+    overflow-y: scroll;
+    min-height: 700px;
+}
+.SumPrice{
+    z-index: 999;
+    top:end;
+}
+@media (max-width:799px){
+    #cart{
+        padding: 0 10px;
+    }
+}
