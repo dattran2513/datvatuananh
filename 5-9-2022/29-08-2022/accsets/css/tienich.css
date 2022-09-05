@@ -1,0 +1,10 @@
+.content-thongbao{
+    padding: 0 20px;
+    width: 35%;
+}
+@media(max-width:1023px){
+    .content-thongbao{
+        padding: 0 20px;
+        width: 100%;
+    }
+}

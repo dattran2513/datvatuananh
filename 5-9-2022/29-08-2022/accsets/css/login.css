@@ -1,0 +1,88 @@
+.SumPrice{
+    display: flex;
+}
+.btn_cart{
+    background-color: #0881797e;
+    font-size: 15px;
+    margin-left: 11%;
+    padding: 10px 26px;
+    font-weight: 600;
+}
+.btn_cart:hover{
+    background-color: #fddde4;
+    cursor: pointer;
+}
+#user{
+    position: relative;
+}
+.user{
+    border: 1px solid #0881797e;
+    background-color: rgb(227, 230, 243);
+    right: 60px;
+    top: 100%;
+    position: absolute;
+}
+.user .user-name{
+    width: 100%;
+    display: flex;
+}
+.user .user-name .img-user{
+    width: 30%;
+}
+.user .user-name p{
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 50px;
+    margin: 10px;
+    width: 70%;
+}
+.map p{
+    margin: 10px;
+}
+#user ~ .user{
+    display: none;
+}
+#user:hover ~.user{
+    display: block;
+}
+.img-users{
+    margin: 10px;
+    width: 50px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+@media (max-width:799px) {
+    #feature .fe-box:nth-child(3){
+        display:block;
+    }
+    #feature .fe-box:nth-child(4){
+        display:block;
+    }
+    #feature .fe-box:nth-child(5){
+        display:block;
+    }
+    #feature .fe-box:nth-child(6){
+        display:block;
+    }
+    #product1 .pro-container .pro:nth-child(3){
+        display:block;
+    }
+    #product1 .pro-container .pro:nth-child(5){
+        display:block;
+    }
+    #product1 .pro-container .pro:nth-child(6){
+        display:block;
+    }
+    #product1 .pro-container .pro:nth-child(7){
+        display:block;
+    }
+    #product1 .pro-container .pro:nth-child(8){
+        display:block;
+    }
+    #MyClockDisplay{
+        display:none;
+    }
+}
